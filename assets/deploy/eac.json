@@ -1,0 +1,38 @@
+{
+  "Applications": {
+    "{{$1}}": {
+      "Details": {
+        "Description": "An application for hosting the files from the NPM package '{{NPM_PACKAGE}}'",
+        "Name": "NPM Package Deploy: {{NPM_PACKAGE}}"
+      },
+      "LookupConfig": {
+        "PathRegex": "/{{PACKAGE_ROUTE}}.*"
+      },
+      "Package": {
+        "Details": {
+          "Package": "{{NPM_PACKAGE}}",
+          "Version": "{{PACKAGE_VERSION}}"
+        },
+        "Type": "NPMLowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "BaseHref": "/{{PACKAGE_ROUTE}}/",
+          "DefaultFile": "index.html"
+        },
+        "Type": "DFSProcessor"
+      }
+    }
+  },
+  "Projects": {
+    "{{PROJECT_LOOKUP}}": {
+      "ApplicationLookups": [
+        "{{$1}}"
+      ],
+      "Details": {
+        "Name": "{{Package.Details.Name}}",
+        "Description": "{{Package.Details.Description}}"
+      }
+    }
+  }
+}

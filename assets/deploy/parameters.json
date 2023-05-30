@@ -1,0 +1,38 @@
+{
+  "PROJECT_LOOKUP": {
+    "Order": 1,
+    "Prompts": [
+      {
+        "Type": "eac:projects|select",
+        "Message": "Choose the project to deploy the package to?",
+        "Arguments": {
+          "CreateText": "Create a project"
+        }
+      }
+    ]
+  },
+  "NPM_PACKAGE": {
+    "Order": 2,
+    "Prompts": [
+      {
+        "Message": "Enter the NPM package name:"
+      }
+    ]
+  },
+  "PACKAGE_VERSION": {
+    "Order": 2,
+    "Prompts": [
+      {
+        "Message": "Enter the NPM package version to use:"
+      }
+    ]
+  },
+  "PACKAGE_ROUTE": {
+    "Order": 2,
+    "Prompts": [
+      {
+        "Message": "Enter the route to run the package on:"
+      }
+    ]
+  }
+}
