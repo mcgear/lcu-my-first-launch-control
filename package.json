@@ -1,6 +1,6 @@
 {
   "name": "@mcgear/lcu-my-first-launch-control",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "@mcgear/lcu-my-first-launch-control",
   "author": "Fathym, Inc",
   "main": "lcu.json",
